@@ -149,8 +149,7 @@ class Remmaps:
 
 if __name__ == '__main__':
     while True:
-        acc = get_credential()
-        acc = ['login@hotmail.com', 'password']
-        c = Remmaps(acc[0], acc[1])
+        acc, password = get_credential()
+        c = Remmaps(acc, password)
 
         c.outlook()
